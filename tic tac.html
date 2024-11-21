@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #a2d2ff;
+        }
+        #container{       
+            width: 500px;
+            height: 510px;
+            text-align: center;
+            margin-left: 510px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .btn{
+            height: 150px;
+            width: 150px;
+            font-size: 60px;
+            background-color: rgb(231, 243, 243);
+            border: none;
+            border-radius: 10px;
+            margin-right: 15px;
+            color: black;
+            box-shadow: 3px 3px 12px black; 
+            color: #e33d67;
+            
+        }
+        #result {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 220px;
+            margin-bottom: 50px;
+            display: none;
+        }
+        #name{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #new-game{
+            padding: 1rem;
+            font-size: 1.25rem;
+            color: #fff;
+            border-radius: 1rem;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 640px;
+            background-color: black;
+            margin-left: 680px;
+            display: none;
+       }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <button id="new-game"  onclick="reset()">New Game</button>
+    
+    <div id="name">Tic Tac Toe</div>
+    <div id="container">
+        <button class="btn"  id="a1"></button>
+        <button class="btn"  id="a2"></button>
+        <button class="btn"  id="a3"></button>
+        <button class="btn"  id="a4"></button>
+        <button class="btn"  id="a5"></button>
+        <button class="btn"  id="a6"></button>
+        <button class="btn"  id="a7"></button>
+        <button class="btn"  id="a8"></button>
+        <button class="btn"  id="a9"></button>
+       
+    </div>
+    <script src="tic.js"></script>
+</body>
+</html>
